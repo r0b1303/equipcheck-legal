@@ -1,57 +1,89 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datenschutzerklärung | EquipCheck</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 2rem;
-            background: #f9f9f9;
-            color: #222;
-        }
-        h1, h2 {
-            color: #2a4d69;
-        }
-        section {
-            margin-bottom: 2rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datenschutzerklärung – Equipcheck</title>
+  <style>
+    body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;margin:0;padding:2rem;color:#222;background:#fff;line-height:1.55}
+    h1,h2,h3{color:#00467f;margin-top:2rem}
+    h1{font-size:1.9rem}
+    h2{font-size:1.45rem}
+    h3{font-size:1.2rem}
+    p,li{max-width:60rem}
+    ul{padding-left:1.4rem}
+    code{background:#f4f4f4;padding:2px 4px;border-radius:3px}
+    footer{margin-top:3rem;font-size:.85rem;color:#666}
+  </style>
 </head>
 <body>
-    <h1>Datenschutzerklärung</h1>
-    <section>
-        <h2>1. Allgemeine Hinweise</h2>
-        <p>
-            Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir verarbeiten Ihre Daten daher ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TMG).
-        </p>
-    </section>
-    <section>
-        <h2>2. Verantwortlicher</h2>
-        <p>
-            Verantwortlich für die Datenverarbeitung auf dieser Website ist:<br>
-            EquipCheck<br>
-            E-Mail: info@equipcheck.de
-        </p>
-    </section>
-    <section>
-        <h2>3. Erhebung und Verarbeitung personenbezogener Daten</h2>
-        <p>
-            Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Andere Daten werden automatisch beim Besuch der Website durch unsere IT-Systeme erfasst (z.B. Internetbrowser, Betriebssystem, Uhrzeit des Seitenaufrufs).
-        </p>
-    </section>
-    <section>
-        <h2>4. Ihre Rechte</h2>
-        <p>
-            Ihnen stehen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerruf und Widerspruch zu. Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt, können Sie sich bei der Aufsichtsbehörde beschweren.
-        </p>
-    </section>
-    <section>
-        <h2>5. Kontakt</h2>
-        <p>
-            Für Fragen zum Datenschutz erreichen Sie uns unter info@equipcheck.de.
-        </p>
-    </section>
+<main>
+  <h1>Datenschutzerklärung</h1>
+  <p>In dieser Erklärung informiere ich Sie gemäß Art.&nbsp;13 und 14 der Datenschutz-Grundverordnung (<abbr>DSGVO</abbr>) darüber, welche personenbezogenen Daten ich in der App <strong>Equipcheck</strong> verarbeite und welche Rechte Ihnen zustehen.</p>
+
+  <h2>1. Verantwortliche Person</h2>
+  <p>
+    Robin Schnaiter<br>
+    Brahmsweg 14<br>
+    72202 Nagold<br>
+    E-Mail: <a href="mailto:development@schnaiter.work">development@schnaiter.work</a>
+  </p>
+
+  <h2>2. Datenverarbeitung in der App</h2>
+
+  <h3>2.1 Anmeldung mit Firebase Authentication</h3>
+  <p>Zur Anmeldung nutze ich <strong>Firebase Authentication</strong> (Google Ireland Ltd., Dublin, Irland). Dabei werden folgende Daten verarbeitet:</p>
+  <ul>
+    <li>E-Mail-Adresse</li>
+    <li>Nickname (frei wählbar)</li>
+    <li>Firebase-UID (technischer Identifikator)</li>
+  </ul>
+  <p>Rechtsgrundlage: Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b DSGVO (Vertragserfüllung).</p>
+
+  <h3>2.2 Speicherung Ihrer Ausrüstungsdaten (Firestore Database)</h3>
+  <p>Alle von Ihnen erstellten oder bearbeiteten Gegenstände ("Items") werden in <strong>Google Firestore</strong> gespeichert. Gespeichert werden u.&nbsp;a.:</p>
+  <ul>
+    <li>Name, Typ, technische Details des Items</li>
+    <li>Kauf-/Herstellungsdatum, Lebensdauer, Gewicht, Zustand</li>
+    <li>Erstell- und Änderungszeitpunkt</li>
+    <li>Ihre Firebase-UID, E-Mail-Adresse und Ihr Nickname</li>
+  </ul>
+  <p>Andere Nutzer können Ihre E-Mail-Adresse und Ihren Nickname sehen, wenn Sie Items mit ihnen teilen. Rechtsgrundlage: Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b DSGVO.</p>
+
+  <h3>2.3 Push-Benachrichtigungen (optional)</h3>
+  <p>Sofern Sie zustimmen, verwende ich <strong>Firebase Cloud Messaging</strong>, um Erinnerungen als Push-Nachricht zu senden. Dafür wird ein gerätespezifisches Token gespeichert. Rechtsgrundlage: Ihre Einwilligung (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;a DSGVO). Sie können die Erlaubnis jederzeit in den Systemeinstellungen widerrufen.</p>
+
+  <h3>2.4 Externe Links</h3>
+  <p>Die App enthält Links zu Instagram, Ihrem E-Mail-Programm und öffentlichen PDF-Dateien auf Google Drive. Beim Öffnen eines Links gelten die Datenschutzbestimmungen des jeweiligen Anbieters. Ich habe keinen Einfluss auf deren Datenverarbeitung.</p>
+
+  <h2>3. Empfänger & Drittlandübermittlung</h2>
+  <p>Dienstleister ist Google Ireland Ltd. Eine Übermittlung an Google LLC in den USA kann nicht ausgeschlossen werden. Google stützt sich dabei auf Standardvertragsklauseln gem. Art.&nbsp;46 DSGVO. Details: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy</a>.</p>
+
+  <h2>4. Speicherdauer</h2>
+  <p>Ich speichere Daten nur solange dies für den jeweiligen Zweck erforderlich ist. In der App können Sie Items selbst löschen. Sie können außerdem Ihr gesamtes Konto per Mail an development@schnaiter.work löschen; damit werden alle Items entfernt.</p>
+
+  <h2>5. Ihre Rechte</h2>
+  <ul>
+    <li>Auskunft (Art.&nbsp;15 DSGVO)</li>
+    <li>Berichtigung (Art.&nbsp;16 DSGVO)</li>
+    <li>Löschung (Art.&nbsp;17 DSGVO)</li>
+    <li>Einschränkung der Verarbeitung (Art.&nbsp;18 DSGVO)</li>
+    <li>Datenübertragbarkeit (Art.&nbsp;20 DSGVO)</li>
+    <li>Widerspruch (Art.&nbsp;21 DSGVO)</li>
+    <li>Widerruf von Einwilligungen (Art.&nbsp;7 Abs.&nbsp;3 DSGVO)</li>
+    <li>Beschwerde bei der zuständigen Datenschutzaufsichtsbehörde</li>
+  </ul>
+
+  <h2>6. Datensicherheit</h2>
+  <p>Die Übertragung erfolgt TLS-verschlüsselt. Zugriffe werden durch Firestore-Security-Rules auf authentifizierte Nutzer beschränkt.</p>
+
+  <h2>7. Änderungen dieser Erklärung</h2>
+  <p>Ich behalte mir vor, diese Datenschutzerklärung bei Bedarf anzupassen. Die jeweils aktuelle Fassung finden Sie unter <code>Einstellungen → Datenschutz</code> in der App.</p>
+
+  <p>Stand: 16.&nbsp;Juni 2025</p>
+</main>
+<footer>
+  <p>Diese Erklärung wurde nach bestem Wissen erstellt und ersetzt keine individuelle Rechtsberatung.</p>
+</footer>
 </body>
 </html>
